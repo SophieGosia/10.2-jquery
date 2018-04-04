@@ -1,23 +1,20 @@
-var span = $('span');
-    span.each(function(index, element) {
-});
+// Object Constructors
+function Phone(brand, price, color) {
+    this.brand = brand;
+    this.price = price;
+    this.color = color;
+}
 
-/*span.each(function(index, element) {
-	if(index % 2 == 0) {
-		$(element).css('color', 'red');
-	};
-});*/
+// Prototypes
+Phone.prototype.printInfo = function() {
+    console.log("The phone brand is " + this.brand + ", color is " + this.color + " and the price is " + this.price + ".");
+};
 
-$('span:even').css('color', 'red');
+// Objects
+var samsungGalaxyS6 = new Phone("Samsung", 1800, "black");
+var iPhone6S = new Phone("Apple", 2250, "silver");
+var onePlusOne = new Phone("One Plus", 1600, "silver");
 
-var paragraphs = $('p');
-paragraphs.each(function(index, element) {
-    var button = '<button class="btn" data-tmp="' + index + '">Click me</button>';
-    $(element).append(button);
-});
-
-$('button').click(function(){
-	alert($(this).attr('data-tmp'));
-});
-
-
+iPhone6S.printInfo();
+onePlusOne.printInfo();
+samsungGalaxyS6.printInfo();

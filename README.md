@@ -1,4 +1,4 @@
-10.2 - jquery
+11.4 - OOP classes
 
 https://codepen.io/sophie_gosia/pen/QmVEBP
 

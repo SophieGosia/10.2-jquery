@@ -1,9 +1,36 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade|Roboto');
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-align: center;
+}
+
+.main-section {
+  .heading {
+    text-transform: uppercase;
+    font-family: 'Bungee Shade', cursive;
+    font-weight: 300;
+    font-size: 55px;
+    line-height: 40px;
+    color: #e74c3c;
+    margin-top: 40px;
+    
+    animation-name: blinker;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1.0; }
+  }
+  
+  .main-video {
+    margin-top: 50px;
+  }
 }
 
 /*------Footer------*/
@@ -12,6 +39,6 @@ footer {
   bottom: 0;
   width: 100%;
   padding: 20px 0;
-  background-color: #777;
+  background-color: #e74c3c;
   color: #fff;
 }
