@@ -1,6 +1,7 @@
 // changes in CSS - jquery
 var span = $('span');
-    span.each(function(index, element) {
+span.each(function(index, element) {
+	$('span:even').css('color', 'red');
 });
 
 // Color change - 2 possible ways
@@ -9,8 +10,6 @@ var span = $('span');
 		$(element).css('color', 'red');
 	};
 }); */
-
-$('span:even').css('color', 'red');
 
 // Add new elements in jquery
 var paragraphs = $('p');
