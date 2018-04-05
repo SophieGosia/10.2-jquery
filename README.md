@@ -1,6 +1,6 @@
 10.2 - jquery
 
-https://codepen.io/sophie_gosia/pen/QmVEBP
+https://codepen.io/sophie_gosia/pen/WzaQya
 
 How to run this project: 
 
