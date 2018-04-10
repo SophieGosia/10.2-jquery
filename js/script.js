@@ -6,9 +6,9 @@ $span.each(function(index, element) {
 
 // Color change - 2 possible ways
 /*$span.each(function(index, element) {
-	if(index % 2 == 0) {
-		$(element).css('color', 'red');
-	};
+  if(index % 2 == 0) {
+    $(element).css('color', 'red');
+  };
 }); */
 
 // Add new elements in jquery
@@ -20,5 +20,5 @@ $paragraphs.each(function(index, element) {
 
 // Event handlers
 $('button').click(function(){
-	alert($(this).attr('data-tmp'));
+  alert($(this).attr('data-tmp'));
 });
